@@ -164,8 +164,7 @@ class TreeSurrogate(object):
                                         min_samples_leaf=min_samples_leaf,
                                         min_weight_fraction_leaf=min_weight_fraction_leaf,
                                         max_features=max_features,
-                                        random_state=seed, max_leaf_nodes=max_leaf_nodes,
-                                        min_impurity_split=min_impurity_split)
+                                        random_state=seed, max_leaf_nodes=max_leaf_nodes)
         else:
             raise exceptions.ModelError("Model type not supported. Supported options types{'classifier', 'regressor'}")
         self.__model = est
